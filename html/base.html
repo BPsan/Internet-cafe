@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>{% block title %} Internet Cafe {% endblock %}</title>
+</head>
+<body>
+  <header>
+        <nav>
+            <a href="#"><img src="{% static 'img/logo.png' %}" width="100%" alt="Логотип"></a>
+            <ul class="ul-nav">
+                <li class="pop-user">
+                    <div class="div-pop">
+
+                        <a class="a-pop" href="user.html">Личный кабинет</a>
+                        <a class="a-pop" href="post.html">Выложить пост</a>
+                        <a class="a-pop" href="#">Выйти</a>
+
+                        <form>
+                          <a class="a-pop" href="login.html">Вход</a>
+                          <a class="a-pop" href="registration.html">Зарегистрироватся</a>
+                        </form>
+
+                    </div>
+                </li>
+                <li><input type="button" class="pop-inp"/></li>
+            </ul>
+        </nav>
+    </header>
+            {%block content %}
+            {%endblock content%}
+    <footer>
+        <div class="contact">
+            <h2>© 2022 Интернет-кафе InPlace</h2>
+        </div>
+        <div class="contact">
+            <h2>Связатся с нами</h2>
+            <ul class="ul_contack">
+                <li><a href="mailto:InPlace.gmail.com">InPlace.gmail.com</a></li>
+                <li><a href="tel:+79996232534">+7 (999) 623 25 34</a></li>
+                <li><a href="#">Наш телеграм</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #647DEE, #36096D);
+    
+}
+.form-cent{
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    width: 100%;
+    display: block;
+    font-family: OpenSans-Regular;
+    font-size: 30px;
+    color: #fefefe;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.div-button{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-inp{
+    border-top-left-radius: 6px;
+    border-right: none;
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.pass-inp{
+    border-top-right-radius: 6px;
+    border-right-color: black;
+    height: 60px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.inf1{
+    width: 50%;
+    display: flex;
+}
+.inf2{
+    width: 50%;
+    display: flex;
+}
+.login100-form {
+    max-width: 490px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-bord{
+    width: 100%;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.error-input{
+    border: 2px red solid;
+    margin-bottom: 0px;
+}
+.error_mes{
+    color: red;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+
+@media (max-width: 400px){
+    .inf1{
+        width: 100%;
+    }
+    .inf2{
+        width: 100%;
+    }
+    .div-button{
+        width: 100%;
+    }
+    .log-inp{
+        border-right: 2px black solid;
+        border-top-right-radius: 6px;
+    }
+    .pass-inp{
+        border-right: 2px black solid;
+        border-top-right-radius: 0;
+    }
+    .login100-form {
+        justify-content: center;
+    }
+}

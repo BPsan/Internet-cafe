@@ -1,0 +1,8 @@
+<?php foreach($booking as $key => $item):?>
+    <li>
+        <h1 class="title_bookings"><?=$item['Title']?></h1>
+        <p class="body_post"><?=$item['Body']?></p>
+        <?php if ($item['Img'] != NULL): ?><img src="<?=$item['Img']?>"><?php endif; ?>
+        <p><a href="#">изменить</a>|<a href="#">удалить</a></p>
+    </li>
+<?php endforeach;?>

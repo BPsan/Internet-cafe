@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #647DEE, #36096D);
+    
+}
+.form-cent{
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.reg100-form {
+    max-width: 490px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+h1{
+    width: 100%;
+    display: block;
+    font-family: OpenSans-Regular;
+    font-size: 30px;
+    color: #fefefe;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+}
+.div-inf{
+    width: 100%;
+    display: flex;
+}
+.inp-log{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: 2px black solid;
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.inp-pass{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 2px black solid;
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.inp-mail{
+    border: 2px black solid;
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.button-bord{
+    width: 100%;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+}
+.inp-phone{
+    border: 2px black solid;
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+
+.error-input{
+    border: 2px red solid;
+    margin-bottom: 0px;
+}
+.error_mes{
+    color: red;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 500px){
+    .reg100-form{
+        max-width: 300px;
+    }
+    .h-reg{
+        font-size: 30px;
+    }
+}

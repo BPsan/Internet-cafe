@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #647DEE, #36096D) no-repeat;
+    width: 100vw;
+    height: 100vh;
+    min-width: 280px;
+    min-height: 700px;
+}
+
+.bookings{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bookings_block{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 10px;
+    overflow-y: scroll;
+    background: linear-gradient(#4b51af, #363a7c);
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bookings_block::-webkit-scrollbar {
+    width: 0.5em;
+}
+.bookings_block::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
+}
+.bookings_block::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+.bookings_block > li{
+    border: 2px gray solid;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 0;
+    background: #1848864f;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.bookings_block > li > p{
+    border-right: 2px gray solid;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.not-found{
+    width: 100%;
+}
+.p-end{
+    color: white;
+    width: 20%;
+}
+.id{
+    width: 5%;
+}
+.date{
+    width: 30%;
+}
+.price{
+    width: 15%;
+}
+.button-close{
+    background: none;
+    border: none;
+    border-right: 0px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+.button-close:active{
+    color: gray;
+}
+.disabled{
+    text-decoration: line-through;
+}
+form{
+    width: 20%;
+}
+
+@media (max-width: 800px) {
+    .bookings_block {
+        width: 70%;
+    }
+    .title_bookings {
+        font-size: 20px;
+    }
+}
+@media (max-width: 650px) {
+    .bookings_block > li{
+            font-size: 12px;
+    }
+}
+@media (max-width: 430px) {
+    .bookings_block {
+        width: 90%;
+    }
+    .bookings_block > li{
+        font-size: 8px;
+}
+    .title_bookings {
+        font-size: 15px;
+    }   
+}

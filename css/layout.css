@@ -1,0 +1,166 @@
+body{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    min-width: 300px;
+    min-height: 750px;
+}
+
+nav{
+    background-color: #4b51af;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+header{
+    height: 8%;
+}
+nav > a{
+    margin-left: 10vw;
+    width: 15%;
+}   
+.ul-nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-right: 10vw;
+    padding-left: 0;
+}
+.ul-nav > li{
+    font-size: 30px;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+.pop-user{
+    position: absolute;
+    top: 6%;
+    right: 0%;
+    margin-right: 10vw;
+    background: #4b51af;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    border-radius: 10px;
+    border: 3px rgb(36, 41, 126) solid;
+    visibility: hidden;
+}
+.shown{
+    visibility: visible;
+}
+.pop-user > img{
+    margin-left: 10px;
+    border-radius: 30px;
+    border: 1px white solid;
+}
+.div-pop{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.pop-inp{
+    border: 0;
+    padding: 0;
+    background: url(../img/user.png) no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+main{
+    height: 82%;
+}
+
+footer{
+    background-color: black;
+    min-height: 85px;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact{
+    width: 30%;
+    margin-left: 5%;
+}
+.contact > h2 {
+    margin: 0 auto;
+    margin-left: 2%;
+    color: white;
+    font-size: 20px;
+}
+.ul_contack{
+    list-style-type: none;
+    margin: 0 auto;
+    margin-left: 2%;
+    padding-left: 5px;
+}
+.ul_contack > li > a{
+    color: #d03349;
+    font-size: 15px;
+}
+
+
+a:link {
+    color: black; 
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: #ffffff; 
+}
+a:active {
+    color: #979797; 
+}
+a{
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    .ul-nav > li{
+        font-size: 20px;
+    }
+    .pop-user > img{
+        width: 50px;
+        height: 50px;
+    }
+    .div-pop{
+        font-size: 15px;
+    }
+    .contact > h2 {
+        font-size: 15px;
+    }
+    .ul_contack > li > a{
+        font-size: 10px;
+    }
+}
+@media (max-width: 425px){
+    .a-pop{
+        margin-bottom: 2.5px;
+    }
+}
+@media (max-width: 400px) {
+    .ul-nav > li{
+        font-size: 15px;
+    }
+    .div-pop{
+        font-size: 10px;
+    }
+    .contact > h2 {
+        font-size: 11px;
+    }
+    .ul_contack > li > a{
+        font-size: 8px;
+    }
+}
+@media (max-width: 330px) {
+    .pop-user{
+        margin-right: 4vw;
+        top: 7%;
+    }
+}
